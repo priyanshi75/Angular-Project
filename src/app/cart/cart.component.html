@@ -1,0 +1,15 @@
+
+<div>
+    <h1 class="grey">{{componentName}}</h1>
+    <!-- <input class="form-control" type="text" (input)="getItem($event)" [value]="item"> -->
+    <input type="text" class="form-control" [(ngModel)] = "item">
+    <input type="password" class="form-control" [(ngModel)] = "item">
+    <input type="text" class="form-control" [(ngModel)] = "item">
+    <button [disabled]="" (click)="addToCart()"  class="btn btn-success w-100">Add Button</button>
+    <ul class="list-group">
+        <li class="list-group-item">
+            {{cart.join(' | ')}}
+        </li>
+
+    </ul>
+</div>
